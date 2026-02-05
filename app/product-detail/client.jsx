@@ -20,7 +20,7 @@ import {
  } from 'lucide-react';
 
 const DetailPage = () => {
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(true);
 
   return (
     <>
@@ -29,7 +29,7 @@ const DetailPage = () => {
         <section>
             <div className='mx-5 py-10'>
                 <h1 className='text-4xl'>VitaLife Omega-3 Softgels Heart</h1>
-                <div className='flex gap-5 pt-10'>
+                <div className='flex flex-wrap gap-5 pt-10'>
                  <div className='flex gap-1 border-r border-gray-300 pr-6'>
                     <Star size={20} className='fill-amber-300 text-amber-300'/>
                     <Star size={20} className='fill-amber-300 text-amber-300'/>
@@ -66,34 +66,34 @@ const DetailPage = () => {
                 <img 
                 src="sellzy-imgs/offer1.png" 
                 alt="" 
-                className='w-32 h-30 object-cover border border-gray-300 rounded-2xl cursor-pointer'
+                className='md:w-32 w-21 h-25 md:h-30 object-cover border border-gray-300 rounded-2xl cursor-pointer'
                 />
                 <img 
                 src="sellzy-imgs/offer2.png" 
                 alt="" 
-                className='w-32 h-30 object-cover border border-gray-300 rounded-2xl cursor-pointer'
+                className='md:w-32 w-21 h-25 md:h-30 object-cover border border-gray-300 rounded-2xl cursor-pointer'
                 />
                 <img 
                 src="sellzy-imgs/offer3.png" 
                 alt="" 
-                className='w-32 h-30 object-cover border border-gray-300 rounded-2xl cursor-pointer'
+                className='md:w-32 w-21 h-25 md:h-30 object-cover border border-gray-300 rounded-2xl cursor-pointer'
                 />
                 <img 
                 src="sellzy-imgs/offer4.png" 
                 alt="" 
-                className='w-32 h-30 object-cover border border-gray-300 rounded-2xl cursor-pointer'
+                className='md:w-32 w-21 h-25 md:h-30 object-cover border border-gray-300 rounded-2xl cursor-pointer'
                 />
                 <img 
                 src="sellzy-imgs/offer5.png" 
                 alt="" 
-                className='w-32 h-30 object-cover border border-gray-300 rounded-2xl cursor-pointer'
+                className='md:w-3 w-21 h-25 md:h-30 object-cover border border-gray-300 rounded-2xl cursor-pointer'
                 />
              </div>
             </div>
 
             <div className=' flex flex-col items-start border border-gray-300 rounded-2xl p-5 mt-8 max-w-5xl'>
               <p className='uppercase bg-red-600 text-white px-2'>sales</p>
-                <h5 className='py-5 text-md md:text-2xl'>
+                <h5 className='py-5 text-lg md:text-2xl'>
                  $62.97 <span className='text-gray-400 line-through px-1'>
                   $39.99</span> <span className='bg-yellow-400 text-sm px-1 py-1'>15% OFF</span>
                 </h5>
@@ -130,7 +130,7 @@ const DetailPage = () => {
 
                 <div className='border-t border-gray-200 pt-4'>
                     <h4 className='font-semibold'>Pack Size: <span>250 ML</span></h4>
-                    <div className='grid md:grid-cols-4 gap-3 pt-3'>
+                    <div className='flex flex-wrap gap-3 pt-3'>
                         <span className='border border-gray-200 py-2 px-6 rounded-full bg-teal-700 text-white cursor-pointer'>
                             60 ML
                         </span>
@@ -162,7 +162,7 @@ const DetailPage = () => {
                         </span>
 
                         <button className='bg-yellow-400 hover:bg-yellow-500 hover:text-white text-black py-3 px-7  rounded-full cursor-pointer'>Buy Now</button>
-                        <button className='bg-teal-700 hover:bg-teal-800 text-white py-3 px-7 rounded-full cursor-pointer'>
+                        <button className='bg-teal-700 hover:bg-teal-800 text-white py-3 md:px-7 px-4 rounded-full cursor-pointer'>
                             <ShoppingCart className='inline-block'/> Add to Cart</button>
                     </div>
                 </div>
@@ -283,16 +283,16 @@ const DetailPage = () => {
              </div>
 
             <div>
-                <div className='grid grid-cols-1 md:grid-cols-2 gap-20 max-w-7xl mx-auto px-6 py-16'>
-                    <div>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-20 max-w-7xl mx-auto md:px-6 py-16'>
+                    <div className='max-w-sm'>
                         <img src="/sellzy-imgs/about3.jpg" 
                         alt=""
-                        className='w-150 h-150 object-cover rounded-2xl' />
+                        className='md:w-150 text-center h-150 object-cover rounded-2xl' />
                     </div>
              
-                    <div className='pt-5'>
+                    <div className='md:pt-5'>
                                  
-                        <h2 className='text-3xl pt-8'>🛒 eCommerce Platform Features</h2>
+                        <h2 className='text-3xl md:pt-8'>🛒 eCommerce Platform Features</h2>
                         <p className='text-gray-600 pt-10'>
                           Launch, manage, and grow your online store with our
                           all-in-one eCommerce solution. Whether you're a small
@@ -362,7 +362,7 @@ const DetailPage = () => {
             </div>
 
             <div>
-                <div className='grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-10 max-w-7xl mx-auto px-6 py-6'>
+                <div className='grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-10 max-w-7xl mx-auto md:px-6 md:py-6'>
                     <div>
                                  
                         <h2 className='text-3xl pt-3'>Easy to Customization</h2>
@@ -492,7 +492,7 @@ const DetailPage = () => {
         </section>
 
         <section>
-            <div className='flex justify-between md:mx-10 mx-3'>
+            <div className='flex justify-between md:mx-10 mx-5'>
                 <div>
                 <h3 className='font-semibold text-3xl'>Related Products</h3>
                 </div>
@@ -567,13 +567,13 @@ const DetailPage = () => {
                         </h5>
 
                         <div className='flex gap-3 py-2'>
-                           <div className='border rounded-full p-2 border-gray-300 hover:bg-gray-100  text-gray-600 cursor-pointer'>
+                           <div className='border rounded-full w-10 h-10 flex items-center justify-center border-gray-300 hover:bg-gray-100  text-gray-600 cursor-pointer'>
                             <Heart size={20}/>
                            </div>
 
                            <div>
                             <button 
-                            className='bg-[var(--hoverColor)] md:font-semibold text-white text-xs md:text-sm rounded-4xl px-5 md:px-12 py-2 cursor-pointer'>
+                            className='bg-[var(--hoverColor)] md:font-semibold text-white text-xs md:text-sm rounded-4xl px-4 md:px-12 py-2 cursor-pointer'>
                                 <ShoppingCart size={25}
                                 className='inline-block pr-1'/> Add to Cart</button>
                            </div>

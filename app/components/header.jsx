@@ -128,7 +128,7 @@ export default function Header() {
             <li className="text-teal-700"><a href="/">Home</a> <ChevronDown 
             size={15} className="inline-block"/></li>
             <li className="hover:text-teal-700 cursor-pointer"><a href="/about">About Us</a></li>
-            <li className="hover:text-teal-700 cursor-pointer">Shop <ChevronDown 
+            <li className="hover:text-teal-700 cursor-pointer"><a href="/category">Shop </a><ChevronDown 
             size={15} className="inline-block"/></li>
             <li className="hover:text-teal-700 cursor-pointer">Sellers <ChevronDown 
             size={15} className="inline-block"/></li>

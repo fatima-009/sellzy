@@ -724,7 +724,7 @@ const [active, setActive] = useState("All Products");
 
                         <div className='px-5 pt-4'>
 
-                        <h3 className=' text-md md:text-lg font-semibold hover:text-[var(--hoverColor)] cursor-pointer'>
+                        <h3 className=' text-md md:text-lg hover:text-[var(--hoverColor)] cursor-pointer'>
                             {item.title}
                         </h3>
 
@@ -1159,7 +1159,7 @@ const [active, setActive] = useState("All Products");
 
                         <div className='px-5 pt-4'>
 
-                        <h3 className=' text-md md:text-lg font-semibold hover:text-[var(--hoverColor)] cursor-pointer'>
+                        <h3 className=' text-md md:text-lg hover:text-[var(--hoverColor)] cursor-pointer'>
                             {item.title}
                         </h3>
 

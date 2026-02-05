@@ -1,4 +1,5 @@
 import React from 'react';
+import Subscribe from "../components/subscribe";
 import { 
     BadgeCheckIcon,
     Check,
@@ -17,13 +18,13 @@ import {
 const About = () => {
   return (
     <>
-    <main className='bg-[var(--backgroundColor)] text-black'>
+    <main className='bg-[var(--backgroundColor)] text-black overflow-x-hidden'>
         <section>
             <div className="max-w-7xl mx-auto px-6 pt-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-start">
 
                 <div>
-                  <h1 className="text-4xl md:text-5xl font-bold min-w-xl text-gray-900 leading-tight">
+                  <h1 className="text-2xl md:text-5xl font-bold min-w-xl text-gray-900 leading-tight">
                     Empowering Better Health at Home
                   </h1>
             
@@ -194,7 +195,7 @@ const About = () => {
                 <div>
                     <img src="/sellzy-imgs/about3.jpg" 
                     alt=""
-                    className='w-130 h-150 object-cover rounded-2xl' />
+                    className='w-full max-w-xl h-full object-cover rounded-2xl' />
                 </div>
             </div>
         </section>
@@ -207,8 +208,8 @@ const About = () => {
             </p>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-6 bg-[#a0e2e0] rounded-4xl mt-3 py-15 px-25'>
-                <div className='bg-[var(--backgroundColor)] p-12 rounded-3xl'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-6 bg-[#a0e2e0] rounded-4xl mt-3 py-15 md:px-25 px-5'>
+                <div className='bg-[var(--backgroundColor)] p-12 rounded-3xl min-w-xs'>
                     <div className='flex gap-4'>
                         <img 
                         src="/sellzy-imgs/dp.png" 
@@ -273,7 +274,7 @@ const About = () => {
                     </p>
                 </div>
                
-            <div className='flex translate-x-119 gap-6 pt-5'>
+            <div className='flex justify-center md:translate-x-70 gap-6 pt-5'>
                 <ChevronLeft size={50}
                 className='bg-gray-100 rounded-full p-4 hover:bg-[var(--hoverColor)] hover:text-white cursor-pointer'/>
                 <ChevronRight size={50}
@@ -387,7 +388,7 @@ const About = () => {
                         <img 
                         src={item.img} 
                         alt="" 
-                        className='w-50 md:w-65 h-70 object-cover rounded-xl mx-auto cursor-pointer bg-pink-100'/>
+                        className='w-110 md:w-65 md:h-70 h-110 object-cover rounded-xl mx-auto cursor-pointer bg-pink-100'/>
                         </div>
 
                         <div className='px-5 pt-4 text-center'>
@@ -413,36 +414,7 @@ const About = () => {
             </div>
         </section>
 
-        <section className="py-10 relative overflow-hidden">
-      <div className="max-w-4xl mx-auto text-center px-4">
-               <h2 className="text-3xl font-bold mb-3">
-                 Subscribe to our newsletter
-               </h2>
-               <p className="text-sm text-gray-400 mb-8">
-                 Stay updated! Subscribe to our mailing list for news, updates, and exclusive offers.
-               </p>
-
-                 <div className="flex flex-col sm:flex-row items-center gap-16 mx-auto max-w-lg
-                   border border-gray-200 rounded-full  focus-within:border-black focus-within:ring-1">
-                     <input
-                       type="email"
-                       placeholder="Enter your email"
-                       className=" w-full sm:w-80 px-5 py-3 rounded-full text-gray-800 outline-none bg-transparent"
-                     />
-         
-                     <button
-                       className="
-                         px-6 py-2 rounded-full
-                         bg-teal-600 hover:bg-teal-700
-                         text-white transition font-medium cursor-pointer
-                       "
-                     >
-                       Subscribe
-                     </button>
-                 </div>
-
-            </div>
-       </section>
+      <Subscribe/>
     </main>
     </>
   )
