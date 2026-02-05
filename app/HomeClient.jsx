@@ -1,6 +1,5 @@
 "use client";
-import Footer from "@/app/components/footer";
-import Header from '@/app/components/header';
+import Subscribe from '@/app/components/subscribe';
 import React, { useState } from 'react';
 import { 
     ArrowRightIcon,
@@ -27,65 +26,65 @@ const categories =[
 
 const topRateProducts = 
 [
-    {
-      id: 1,
-      title: "VitaLife Omega-3 Softgels Heart Support Max Strength",
-      price: 27.49,
-      oldPrice: 39.99,
-      rating: 4,
-      reviews: 189,
-      image: "/sellzy-imgs/product6.png",
-    },
-    {
-      id: 2,
-      title: "VitaLife Omega-3 Softgels Heart Support Max Strength",
-      price: 27.49,
-      oldPrice: 39.99,
-      rating: 4,
-      reviews: 189,
-      image: "/sellzy-imgs/product3.png",
-    },
-    {
-      id: 3,
-      title: "VitaLife Omega-3 Softgels Heart Support Max Strength",
-      price: 27.49,
-      oldPrice: 39.99,
-      rating: 4,
-      reviews: 189,
-      image: "/sellzy-imgs/product11.png",
-    },
-  ];
+  {
+    id: 1,
+    title: "VitaLife Omega-3 Softgels Heart Support Max Strength",
+    price: 27.49,
+    oldPrice: 39.99,
+    rating: 4,
+    reviews: 189,
+    image: "/sellzy-imgs/product6.png",
+  },
+  {
+    id: 2,
+    title: "VitaLife Omega-3 Softgels Heart Support Max Strength",
+    price: 27.49,
+    oldPrice: 39.99,
+    rating: 4,
+    reviews: 189,
+    image: "/sellzy-imgs/product3.png",
+  },
+  {
+    id: 3,
+    title: "VitaLife Omega-3 Softgels Heart Support Max Strength",
+    price: 27.49,
+    oldPrice: 39.99,
+    rating: 4,
+    reviews: 189,
+    image: "/sellzy-imgs/product11.png",
+  },
+];
 
-  const topItemsProducts = 
-  [
-    {
-      id: 4,
-      title: "VitaLife Omega-3 Softgels Heart Support Max Strength",
-      price: 27.49,
-      oldPrice: 39.99,
-      rating: 4,
-      reviews: 189,
-      image: "/sellzy-imgs/product4.png",
-    },
-    {
-      id: 5,
-      title: "VitaLife Omega-3 Softgels Heart Support Max Strength",
-      price: 27.49,
-      oldPrice: 39.99,
-      rating: 4,
-      reviews: 189,
-      image: "/sellzy-imgs/product9.png",
-    },
-    {
-      id: 6,
-      title: "VitaLife Omega-3 Softgels Heart Support Max Strength",
-      price: 27.49,
-      oldPrice: 39.99,
-      rating: 4,
-      reviews: 189,
-      image: "/sellzy-imgs/product8.png",
-    },
-  ];
+const topItemsProducts = 
+[
+  {
+    id: 4,
+    title: "VitaLife Omega-3 Softgels Heart Support Max Strength",
+    price: 27.49,
+    oldPrice: 39.99,
+    rating: 4,
+    reviews: 189,
+    image: "/sellzy-imgs/product4.png",
+  },
+  {
+    id: 5,
+    title: "VitaLife Omega-3 Softgels Heart Support Max Strength",
+    price: 27.49,
+    oldPrice: 39.99,
+    rating: 4,
+    reviews: 189,
+    image: "/sellzy-imgs/product9.png",
+  },
+  {
+    id: 6,
+    title: "VitaLife Omega-3 Softgels Heart Support Max Strength",
+    price: 27.49,
+    oldPrice: 39.99,
+    rating: 4,
+    reviews: 189,
+    image: "/sellzy-imgs/product8.png",
+  },
+];
 
 const blogs = [
 {
@@ -128,7 +127,6 @@ const [active, setActive] = useState("All Products");
 
   return (
     <>
-    <Header/>
     <main className='bg-[var(--backgroundColor)] text-black'>
 
     <section className="max-w-7xl mx-auto px-4 py-8 grid lg:grid-cols-3 gap-6">
@@ -327,7 +325,8 @@ const [active, setActive] = useState("All Products");
                         <p className='text-gray-600 text-sm py-2'>{item.cat}</p>
                         <h3 className='text-lg font-semibold hover:text-[var(--hoverColor)] cursor-pointer'>{item.title}</h3>
                         <p className='py-2 '>{item.saleprice} <span className='text-gray-500 text-sm line-through px-1'>
-                            {item.price}</span> <span className='text-red-600 text-sm'>10% OFF</span></p>
+                            {item.price}</span> <span className='text-red-600 text-sm'>10% OFF</span>
+                        </p>
 
                         <div className='flex gap-1 py-1'>
                             <Star size={20} className='fill-amber-300 text-amber-300'/>
@@ -380,42 +379,41 @@ const [active, setActive] = useState("All Products");
             </div>
 
             <div className='grid grid-cols-2 md:grid-cols-4 py-10 space-y-2'>
-                    {[
-                        {
-                            img: "/sellzy-imgs/product1.png",
-                            title: "VitaLife Omega-3 Softgels Heart Support Max Strength",
-                            price: "$29.99",
-                            saleprice: "$27.49",
-                            sold: 4,
-                            rating: 189,
-                        },
-                        {
-                            img: "/sellzy-imgs/product2.png",
-                            title: "VitaLife Omega-3 Softgels Heart Support Max Strength",
-                            price: "$29.99",
-                            saleprice: "$27.49",
-                            sold: 4,
-                            rating: 189,
-                        },
-                        {
-                            img: "/sellzy-imgs/product3.png",
-                            title: "VitaLife Omega-3 Softgels Heart Support Max Strength",
-                            price: "$29.99",
-                            saleprice: "$27.49",
-                            sold: 4,
-                            rating: 189,
-                        },
-                        {
-                            img: "/sellzy-imgs/product4.png",
-                            title: "VitaLife Omega-3 Softgels Heart Support Max Strength",
-                            price: "$29.99",
-                            saleprice: "$27.49",
-                            sold: 4,
-                            rating: 189,
-                        },
-                       
-                    ].map((item, index) => (
-                       <div key={index} className='mx-3 py-3 bg-white rounded-2xl border border-gray-300'>
+              {[
+                {
+                    img: "/sellzy-imgs/product1.png",
+                    title: "VitaLife Omega-3 Softgels Heart Support Max Strength",
+                    price: "$29.99",
+                    saleprice: "$27.49",
+                    sold: 4,
+                    rating: 189,
+                },
+                {
+                    img: "/sellzy-imgs/product2.png",
+                    title: "VitaLife Omega-3 Softgels Heart Support Max Strength",
+                    price: "$29.99",
+                    saleprice: "$27.49",
+                    sold: 4,
+                    rating: 189,
+                },
+                {
+                    img: "/sellzy-imgs/product3.png",
+                    title: "VitaLife Omega-3 Softgels Heart Support Max Strength",
+                    price: "$29.99",
+                    saleprice: "$27.49",
+                    sold: 4,
+                    rating: 189,
+                },
+                {
+                    img: "/sellzy-imgs/product4.png",
+                    title: "VitaLife Omega-3 Softgels Heart Support Max Strength",
+                    price: "$29.99",
+                    saleprice: "$27.49",
+                    sold: 4,
+                    rating: 189,
+                },
+                ].map((item, index) => (
+                  <div key={index} className='mx-3 py-3 bg-white rounded-2xl border border-gray-300'>
                         <img 
                         src={item.img} 
                         alt="" 
@@ -423,7 +421,7 @@ const [active, setActive] = useState("All Products");
 
                         <div className='px-5 pt-4'>
 
-                        <h3 className=' text-md md:text-lg font-semibold hover:text-[var(--hoverColor)] cursor-pointer'>
+                        <h3 className=' text-md md:text-lg hover:text-[var(--hoverColor)] cursor-pointer'>
                             {item.title}
                         </h3>
 
@@ -437,10 +435,10 @@ const [active, setActive] = useState("All Products");
                             <span className='text-gray-600'>({item.rating})</span>
                         </div>
 
-                        <p className='py-4 text-sm md:text-lg'>
+                        <h5 className='py-4 text-sm md:text-lg'>
                             {item.saleprice} <span className='text-gray-500 line-through px-1'>
                             {item.price}</span> <span className='text-red-600'>10% OFF</span>
-                        </p>
+                        </h5>
 
                         <div className='flex gap-3 py-2'>
                            <div className='border rounded-full p-2 border-gray-300 hover:bg-gray-100  text-gray-600 cursor-pointer'>
@@ -888,10 +886,10 @@ const [active, setActive] = useState("All Products");
                             <span className='text-gray-600'>({item.rating})</span>
                         </div>
 
-                        <p className='py-4 text-sm md:text-lg'>
+                        <h5 className='py-4 text-sm md:text-lg'>
                             {item.saleprice} <span className='text-gray-500 line-through px-1'>
                             {item.price}</span> <span className='text-red-600'>10% OFF</span>
-                        </p>
+                        </h5>
 
                         <div className='flex gap-3 py-2'>
                            <div className='border rounded-full p-2 border-gray-300 hover:bg-gray-100  text-gray-600 cursor-pointer'>
@@ -945,7 +943,7 @@ const [active, setActive] = useState("All Products");
                             Stay Fit. Stay Healthy.
                           </h3>
               
-                          <p className="text-gray-600 text-sm mt-2">
+                          <p className="text-gray-600 text-md mt-2 mx-3">
                             Discover Vitamins, Supplements, Skincare & Immunity Boosters - All in one Place.
                           </p>
                           <button className="flex items-center gap-3 bg-teal-700 hover:bg-teal-800 cursor-pointer text-white px-5 py-2 mt-6 rounded-full text-md">
@@ -980,7 +978,7 @@ const [active, setActive] = useState("All Products");
                         />
 
                         <div className="flex-1">
-                            <h4 className="text-sm font-semibold hover:text-teal-700 cursor-pointer">
+                            <h4 className="text-md hover:text-teal-700 cursor-pointer">
                                 {item.title}
                             </h4>
 
@@ -1034,7 +1032,7 @@ const [active, setActive] = useState("All Products");
                           className="w-25 h-30 object-contain bg-pink-50 rounded-lg p-2" />
           
                           <div className="flex-1">
-                              <h4 className="text-sm font-semibold hover:text-teal-700 cursor-pointer">
+                              <h4 className="text-md hover:text-teal-700 cursor-pointer">
                                   {item.title}
                               </h4>
           
@@ -1050,7 +1048,7 @@ const [active, setActive] = useState("All Products");
           
                                 <div className="flex justify-between items-center mt-1">
                                   <div>
-                                    <span className="font-bold text-sm">${item.price}</span>
+                                    <span className=" text-sm">${item.price}</span>
                                     <span className="line-through text-gray-400 text-xs ml-2">
                                       ${item.oldPrice}
                                     </span>
@@ -1253,41 +1251,11 @@ const [active, setActive] = useState("All Products");
           </div>
         ))}
       </div>
-    </section>
-
-        <section className="py-20 relative overflow-hidden">
-            <div className="max-w-4xl mx-auto text-center px-4">
-               <h2 className="text-3xl font-bold mb-3">
-                 Subscribe to our newsletter
-               </h2>
-               <p className="text-sm text-gray-400 mb-8">
-                 Stay updated! Subscribe to our mailing list for news, updates, and exclusive offers.
-               </p>
-
-                 <div className="flex flex-col sm:flex-row items-center gap-16 mx-auto max-w-lg
-                   border border-gray-200 rounded-full  focus-within:border-black focus-within:ring-1">
-                     <input
-                       type="email"
-                       placeholder="Enter your email"
-                       className=" w-full sm:w-80 px-5 py-3 rounded-full text-gray-800 outline-none bg-transparent"
-                     />
-         
-                     <button
-                       className="
-                         px-6 py-2 rounded-full
-                         bg-teal-600 hover:bg-teal-700
-                         text-white transition font-medium cursor-pointer
-                       "
-                     >
-                       Subscribe
-                     </button>
-                 </div>
-
-            </div>
        </section>
+
+        <Subscribe/>
     </main>
 
-    <Footer/>
     </>
   )
 }

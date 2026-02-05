@@ -125,9 +125,9 @@ export default function Header() {
           </button>
 
           <ul className="hidden lg:flex items-center gap-8 text-sm text-black">
-            <li className="text-teal-700">Home <ChevronDown 
+            <li className="text-teal-700"><a href="/">Home</a> <ChevronDown 
             size={15} className="inline-block"/></li>
-            <li className="hover:text-teal-700 cursor-pointer">About Us</li>
+            <li className="hover:text-teal-700 cursor-pointer"><a href="/about">About Us</a></li>
             <li className="hover:text-teal-700 cursor-pointer">Shop <ChevronDown 
             size={15} className="inline-block"/></li>
             <li className="hover:text-teal-700 cursor-pointer">Sellers <ChevronDown 
@@ -136,7 +136,8 @@ export default function Header() {
             size={15} className="inline-block"/></li>
             <li className="hover:text-teal-700 cursor-pointer">Blog <ChevronDown 
             size={15} className="inline-block"/></li>
-            <li className="hover:text-teal-700 cursor-pointer">Pages <ChevronDown 
+            <li className="hover:text-teal-700 cursor-pointer">
+              <a href="/product-detail">Product Detail</a> <ChevronDown 
             size={15} className="inline-block"/></li>
             <li className="hover:text-teal-700 cursor-pointer">Contact</li>
           </ul>
